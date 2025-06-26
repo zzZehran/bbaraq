@@ -32,7 +32,9 @@ export default function Page() {
           </div>
         </section>
 
-        <section className={`${styles.hero_parallax} container px-5 mx-0`}>
+        <section
+          className={`${styles.hero_parallax} container-fluid px-5 mx-0`}
+        >
           <div className="row px-5">
             <div className="col-lg-6 d-flex flex-column justify-content-center">
               <h4>Lorem Homes Inc.</h4>
@@ -56,7 +58,7 @@ export default function Page() {
           </div>
         </section>
 
-        <section className={`${styles.hero_services} container`}>
+        <section className={`${styles.hero_services} container-fluid`}>
           <h4 className="text-center my-5 mb-4">SERVICES WE OFFER</h4>
           <div className="d-flex justify-content-center">
             <p className="text-center">
@@ -99,7 +101,7 @@ export default function Page() {
           </div>
         </section>
 
-        <section className={`${styles.contact_info} container mx-0`}>
+        <section className={`${styles.contact_info} container-fluid mx-0`}>
           <div className="row justify-content-evenly w-100">
             <div className="col-lg-4">
               <h4 className="mb-4">Get in Touch</h4>
