@@ -1,0 +1,27 @@
+.hero {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.hero h1 {
+  font-weight: 700;
+  font-size: 4rem;
+}
+.hero p {
+  font-size: 1.5rem;
+}
+.hero button {
+  border: none;
+  background-color: #517066;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}

@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+.hero h1,
+.hero h2,
+.hero h3,
+.hero h4,
+.hero h5,
+.hero h6,
+.hero_body h1,
+.hero_body h2,
+.hero_body h3,
+.hero_body h4,
+.hero_body h5,
+.hero_body h6,
+.hero_parallax h1,
+.hero_parallax h2,
+.hero_parallax h3,
+.hero_parallax h4,
+.hero_parallax h5,
+.hero_parallax h6,
+.hero_services h1,
+.hero_services h2,
+.hero_services h3,
+.hero_services h4,
+.hero_services h5,
+.hero_services h6,
+.contact_info h1,
+.contact_info h2,
+.contact_info h3,
+.contact_info h4,
+.contact_info h5,
+.contact_info h6 {
+  font-family: "Roboto Slab", serif;
+}
+.shadow_box {
+  box-shadow: -1px 1px 54px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 1px 54px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 54px 0px rgba(0, 0, 0, 0.75);
+  margin-top: -2rem;
+  background-color: white;
+}
+
+/* hero body */
+.hero_body h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #517066;
+}
+.img_container {
+  height: 30vh;
+  position: relative;
+}
+.img_container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.hero_body h4 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.3rem;
+}
+.hero_parallax {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/parallax.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_parallax h4 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.hero_parallax .img_container {
+  height: 45vh;
+  object-fit: cover;
+}
+/* services start */
+.hero_services h4 {
+  color: #517066;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.hero_services p {
+  width: 80%;
+}
+/* services end */
+
+/* contact info */
+.contact_info {
+  min-height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.contact_info h4 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.contact_info h6 {
+  font-size: 1.5rem;
+}
+
+.form_container {
+  background-color: white;
+}
+.form_container h5 {
+  background-color: #517066;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  position: relative;
+  top: -18%;
+}
+.form_container input {
+  border: none;
+  border-bottom: 1px solid rgb(185, 185, 185);
+  border-radius: 0px;
+  transition: border-color 0.2s ease-in;
+}
+.form_container input:focus {
+  box-shadow: none;
+  border-color: #517066;
+}
+.form_container textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(185, 185, 185);
+}
+.form_container button {
+  font-family: "Roboto Slab", serif;
+  background-color: #517066;
+  border: none;
+}
