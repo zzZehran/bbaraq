@@ -1,3 +1,5 @@
+import ScheduleVisit from "./ScheduleVisit";
+
 export default function ShadowBox({ children }) {
   const styles = {
     minHeight: "50vh",
@@ -7,7 +9,7 @@ export default function ShadowBox({ children }) {
   };
 
   return (
-    <div style={styles} className="rounded mx-5 p-5">
+    <div style={styles} className="rounded mx-md-5 p-md-5">
       {children}
     </div>
   );

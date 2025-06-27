@@ -5,6 +5,7 @@ import { services, standFor } from "@/utils/cardInfo";
 import Hero from "@/app/components/Hero";
 import Footer from "@/app/components/Footer";
 import ShadowBox from "@/app/components/ShadowBox";
+import Services from "@/app/components/Services";
 
 export default function Page() {
   return (
@@ -12,7 +13,7 @@ export default function Page() {
       <Navbar />
       <Hero title={"Lorem Homes Inc."} button={true} />
       <ShadowBox>
-        <section className={`${styles.hero_body} container px-5 pt-1`}>
+        <section className={`${styles.hero_body} container px-md-5 pt-1`}>
           <h3 className="text-center my-5">What we stand for</h3>
           <div className="row justify-content-evenly my-5">
             {standFor.map((el, idx) => {
@@ -75,7 +76,7 @@ export default function Page() {
               services.
             </p>
           </div>
-          <div className="container py-2 py-md-5">
+          {/* <div className="container py-2 py-md-5">
             <div className="row gy-5 px-5 mt-2 mt-md-3">
               {services.map(({ title, desc, img }) => (
                 <div key={title} className="col-md-6">
@@ -104,7 +105,8 @@ export default function Page() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
+          <Services />
         </section>
 
         <section

@@ -11,8 +11,8 @@ export default function page() {
       <ShadowBox>
         <div className="container">
           <div className="row justify-content-around">
-            <div className="col-6">
-              <section className={`${styles.about}`}>
+            <div className="col-lg-6">
+              <section className={`${styles.about} mb-5`}>
                 <header>
                   <h2 className="text-center my-4 mb-5">About Lorem Homes</h2>
                   <p>
