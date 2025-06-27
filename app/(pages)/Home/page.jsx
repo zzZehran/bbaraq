@@ -4,13 +4,14 @@ import Image from "next/image";
 import { services, standFor } from "@/utils/cardInfo";
 import Hero from "@/app/components/Hero";
 import Footer from "@/app/components/Footer";
+import ShadowBox from "@/app/components/ShadowBox";
 
 export default function Page() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <div className={`${styles.shadow_box} mx-5 p-0 rounded`}>
+      <Hero title={"Lorem Homes Inc."} button={true} />
+      <ShadowBox>
         <section className={`${styles.hero_body} container px-5 pt-1`}>
           <h3 className="text-center my-5">What we stand for</h3>
           <div className="row justify-content-evenly my-5">
@@ -19,13 +20,14 @@ export default function Page() {
                 <div key={idx} className="col-lg-4">
                   <div className={`${styles.img_container}`}>
                     <Image
-                      src={"/card/card_1.jpg"}
+                      src={el.img}
                       fill={true}
                       alt={el.alt}
+                      // alt="image"
                     ></Image>
                   </div>
-                  <h4 className="text-center my-3">{el.title}</h4>
-                  <p className="text-center">{el.desc}</p>
+                  <h4 className="text-center my-4 my-md-3">{el.title}</h4>
+                  <p className="text-center mb-4">{el.desc}</p>
                 </div>
               );
             })}
@@ -33,7 +35,7 @@ export default function Page() {
         </section>
 
         <section
-          className={`${styles.hero_parallax} container-fluid px-5 mx-0`}
+          className={`${styles.hero_parallax} container-fluid py-5 px-3 px-md-5 mx-0`}
         >
           <div className="row px-5">
             <div className="col-lg-6 d-flex flex-column justify-content-center">
@@ -52,7 +54,8 @@ export default function Page() {
                 className="rounded"
                 src={"/interior.jpg"}
                 fill={true}
-                alt="person working on home interior"
+                alt="a construction worker working on a frame"
+                style={{ objectFit: "cover" }}
               ></Image>
             </div>
           </div>
@@ -72,36 +75,41 @@ export default function Page() {
               services.
             </p>
           </div>
-          <div className="py-5">
-            <div className="container">
-              <div className="row gy-5 px-5 mt-3">
-                {services.map(({ title, desc, img }) => (
-                  <div key={title} className="col-md-6">
-                    <div className="d-flex gap-4">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src={img}
-                          alt={title}
-                          width={200}
-                          height={200}
-                          className="rounded shadow"
-                          style={{ objectFit: "cover" }}
-                        />
-                      </div>
+          <div className="container py-2 py-md-5">
+            <div className="row gy-5 px-5 mt-2 mt-md-3">
+              {services.map(({ title, desc, img }) => (
+                <div key={title} className="col-md-6">
+                  <div className="d-flex flex-column flex-md-row gap-4">
+                    <div className="flex-shrink-0">
+                      <Image
+                        src={img}
+                        alt={title}
+                        // alt="image"
+                        width={350}
+                        height={200}
+                        className="rounded shadow"
+                        style={{ objectFit: "cover" }}
+                      />
+                    </div>
 
-                      <div>
-                        <h4 className="fw-semibold fs-5 mb-2">{title}</h4>
-                        <p className="text-muted mb-0">{desc}</p>
-                      </div>
+                    <div>
+                      <h4 className="fw-semibold text-center text-md-start fs-5 mb-2">
+                        {title}
+                      </h4>
+                      <p className="text-muted mb-0 d-none d-md-block">
+                        {desc}
+                      </p>
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
-        <section className={`${styles.contact_info} container-fluid mx-0`}>
+        <section
+          className={`${styles.contact_info} container-fluid mx-0 mt-4 py-5`}
+        >
           <div className="row justify-content-evenly w-100">
             <div className="col-lg-4">
               <h4 className="mb-4">Get in Touch</h4>
@@ -120,7 +128,7 @@ export default function Page() {
               </p>
             </div>
             <div
-              className={`${styles.form_container} col-lg-4 rounded py-5 px-4`}
+              className={`${styles.form_container} col-lg-4 rounded py-5 px-4 mt-5 mt-md-0`}
             >
               <h5 className="rounded shadow">Contact Us</h5>
               <form action="">
@@ -172,7 +180,8 @@ export default function Page() {
             </div>
           </div>
         </section>
-      </div>
+      </ShadowBox>
+
       <Footer />
     </>
   );

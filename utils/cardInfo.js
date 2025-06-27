@@ -20,6 +20,8 @@ export const standFor = [
       Specializing in basement, bathroom, kitchen, and concrete driveway construction, our commitment to excellence shines through in every project. 
       We guarantee top-tier finishes, exceptional service, and the finest quality materials, ensuring a superior experience for our clients.
     `,
+    img: "/card/card_2.jpg",
+    alt: "carpenter measuring wood",
   },
   {
     title: "Protected and Assured",
@@ -28,6 +30,8 @@ export const standFor = [
       surpass building codes and safety standards with every project, providing comprehensive protection and peace of mind. 
       Your safety and satisfaction are our top priorities, backed by our commitment to excellence and adherence to industry-leading practices.
     `,
+    img: "/card/card_3.jpg",
+    alt: "person signing a contract",
   },
 ];
 
