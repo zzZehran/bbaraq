@@ -79,3 +79,89 @@ export const services = [
     img: "/services/flooring.jpg",
   },
 ];
+
+export const card_info = [
+  {
+    title: "Property Marketing",
+    text: "Advertising the property to attract potential tenants. Conducting property showings and viewings.",
+    icon: "bi-flag",
+  },
+  {
+    title: "Tenant Screening and Placement",
+    text: "Screening potential tenants. Handling the leasing process, including preparing lease agreements and ensuring compliance with local laws.",
+    icon: "bi-card-checklist",
+  },
+  {
+    title: "Rent Collection",
+    text: "Collecting monthly rent payments from tenants. Enforcing late payment policies.",
+    icon: "bi-cash-coin",
+  },
+  {
+    title: "Property Maintenance and Repairs",
+    text: "Conducting regular property inspections. Coordinating and overseeing maintenance and repair work. Responding to maintenance requests from tenants.",
+    icon: "bi-tools",
+  },
+  {
+    title: "Financial Management",
+    text: "Handling financial transactions related to the property, such as paying bills and property taxes. Providing regular financial statements to landlords.",
+    icon: "bi-calculator",
+  },
+  {
+    title: "Legal Compliance",
+    text: "Ensuring compliance with local, state, and federal housing laws. Handling eviction proceedings if necessary.",
+    icon: "bi-file-earmark-check",
+  },
+  {
+    title: "Tenant Relations",
+    text: "Acting as a liaison between the landlord and the tenant. Addressing tenant concerns and resolving disputes.",
+    icon: "bi-person-check",
+  },
+  {
+    title: "Lease Renewals and Terminations",
+    text: "Managing lease renewals or terminations. Conducting move-out inspections.",
+    icon: "bi-clipboard-data",
+  },
+];
+
+export const tenant_cards = [
+  {
+    title: "Application Process",
+    text: "Assisting tenants with the application process. Providing information on available properties.",
+    icon: "bi-journal-bookmark",
+  },
+  {
+    title: "Tenant Education",
+    text: "Providing information on local rules and regulations. Educating tenants on property care and maintenance.",
+    icon: "bi-backpack4",
+  },
+  {
+    title: "Lease Agreement",
+    text: "Explaining lease terms and conditions to tenants. Ensuring tenants understand their rights and responsibilities.",
+    icon: "bi-shield",
+  },
+  {
+    title: "Communication",
+    text: "Facilitating communication between tenants and landlords. Addressing tenant concerns and inquiries.",
+    icon: "bi-telephone",
+  },
+  {
+    title: "Rent Payment",
+    text: "Facilitating secure and convenient rent payment methods.",
+    icon: "bi-cash-coin",
+  },
+  {
+    title: "Move-In and Move-Out Processes",
+    text: "Conducting move-in inspections and documenting property condition. Providing guidance on the move-out process.",
+    icon: "bi-card-checklist",
+  },
+  {
+    title: "Maintenance Requests",
+    text: "Handling maintenance requests promptly. Coordinating repairs and ensuring the property is well-maintained.",
+    icon: "bi-battery-charging",
+  },
+  {
+    title: "Emergency Contacts",
+    text: "Offering emergency contact information for urgent situations.",
+    icon: "bi-person-lines-fill",
+  },
+];
