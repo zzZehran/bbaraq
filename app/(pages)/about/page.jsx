@@ -14,14 +14,16 @@ export default function page() {
             <div className="col-lg-6">
               <section className={`${styles.about} mb-5`}>
                 <header>
-                  <h2 className="text-center my-4 mb-5">About Lorem Homes</h2>
+                  <h2 className="text-center my-4 mb-5">
+                    About Elite Property Management
+                  </h2>
                   <p>
-                    At Lorem Homes, we are more than just a renovation company -
-                    we are your trusted partner in property transformation and
-                    management. With a steadfast commitment to excellence and a
-                    passion for innovation, we specialize in residential and
-                    commercial renovations, as well as comprehensive property
-                    management services.
+                    At Elite Property Management, we are more than just a
+                    renovation company - we are your trusted partner in property
+                    transformation and management. With a steadfast commitment
+                    to excellence and a passion for innovation, we specialize in
+                    residential and commercial renovations, as well as
+                    comprehensive property management services.
                   </p>
                 </header>
 
@@ -37,9 +39,9 @@ export default function page() {
 
                 <section>
                   <p>
-                    <b className="text-black">What We Offer</b> At Lorem Homes,
-                    we offer a comprehensive range of services tailored to meet
-                    the diverse needs of our clients:
+                    <b className="text-black">What We Offer</b> At Elite
+                    Property Management, we offer a comprehensive range of
+                    services tailored to meet the diverse needs of our clients:
                   </p>
                   <ul>
                     <li>
@@ -137,8 +139,8 @@ export default function page() {
 
                 <section>
                   <p>
-                    At Lorem Homes, we don't just renovate properties - we
-                    transform lives.
+                    At Elite Property Management, we don't just renovate
+                    properties - we transform lives.
                     <b className="text-black"> Contact us today</b> to discover
                     the endless possibilities for your home or commercial space.
                   </p>

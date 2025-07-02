@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <>
       <Navbar />
-      <Hero title={"Lorem Homes Inc."} button={true} />
+      <Hero title={"Elite Property Management"} button={true} />
       <ShadowBox>
         <section className={`${styles.hero_body} container px-md-5 pt-1`}>
           <h3 className="text-center my-5">What we stand for</h3>
@@ -20,12 +20,7 @@ export default function Page() {
               return (
                 <div key={idx} className="col-lg-4">
                   <div className={`${styles.img_container}`}>
-                    <Image
-                      src={el.img}
-                      fill={true}
-                      alt={el.alt}
-                      // alt="image"
-                    ></Image>
+                    <Image src={el.img} fill={true} alt={el.alt}></Image>
                   </div>
                   <h4 className="text-center my-4 my-md-3">{el.title}</h4>
                   <p className="text-center mb-4">{el.desc}</p>
@@ -40,7 +35,7 @@ export default function Page() {
         >
           <div className="row px-5">
             <div className="col-lg-6 d-flex flex-column justify-content-center">
-              <h4>Lorem Homes Inc.</h4>
+              <h4>Elite Property Management</h4>
               <p>
                 Our mission is simple yet profound: to exceed expectations with
                 every project we undertake. We aim to breathe new life into
@@ -66,14 +61,14 @@ export default function Page() {
           <h4 className="text-center my-5 mb-4">SERVICES WE OFFER</h4>
           <div className="d-flex justify-content-center">
             <p className="text-center">
-              Transform your property with Lorem Homes Inc.'s expert renovation
-              services. With a keen eye for design and quality craftsmanship, we
-              breathe new life into spaces, enhancing their appeal and
-              functionality. From kitchen remodels to full-scale renovations,
-              our team delivers tailored solutions that exceed expectations.
-              Trust Bbaraq Homes Inc. to elevate your property to new heights of
-              elegance and comfort through our comprehensive renovation
-              services.
+              Transform your property with Elite Property Management's expert
+              renovation services. With a keen eye for design and quality
+              craftsmanship, we breathe new life into spaces, enhancing their
+              appeal and functionality. From kitchen remodels to full-scale
+              renovations, our team delivers tailored solutions that exceed
+              expectations. Trust Bbaraq Homes Inc. to elevate your property to
+              new heights of elegance and comfort through our comprehensive
+              renovation services.
             </p>
           </div>
           {/* <div className="container py-2 py-md-5">
@@ -124,8 +119,26 @@ export default function Page() {
                 <i className="bi bi-telephone-fill me-2"></i> Give us a ring
               </h6>
               <p>
-                <a href="tel:" className="text-decoration-none text-white">
-                  +91-1234567890
+                <a
+                  href="tel:+917006940036"
+                  className="text-decoration-none text-white"
+                >
+                  +91-7006940036
+                </a>
+                <br />
+                <a
+                  href="tel:+919419023459"
+                  className="text-decoration-none text-white"
+                >
+                  +91-9419023459
+                </a>
+                <br />
+
+                <a
+                  href="tel:+14165089157"
+                  className="text-decoration-none text-white"
+                >
+                  +1 (416) 508-9157
                 </a>
               </p>
             </div>

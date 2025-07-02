@@ -145,6 +145,7 @@
   font-family: "Roboto Slab", serif;
   background-color: #517066;
   border: none;
+  color: white !important;
 }
 
 @media (max-width: 1000px) {

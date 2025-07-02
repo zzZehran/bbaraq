@@ -12,7 +12,7 @@ const robotoSlab = Roboto_Slab({
 });
 export default function ContactSection() {
   const info = {
-    address: "",
+    address: "Srinagar, Jammu and Kashmir, 190001",
     phone: "",
   };
   return (
@@ -77,8 +77,32 @@ export default function ContactSection() {
                 <i className="bi bi-telephone-fill text-danger fs-4 me-2"></i>
                 <div>
                   <h6 className="fw-bold">Give us a ring</h6>
-                  <p className="mb-0">+91-{info.phone}</p>
-                  <small className="text-muted">Mon-Fri 10am -6pm</small>
+                  <p className="mb-0">
+                    {" "}
+                    <a
+                      href="tel:+917006940036"
+                      className="text-decoration-none text-black"
+                    >
+                      +91-7006940036
+                    </a>
+                    <br />
+                    <a
+                      href="tel:+919419023459"
+                      className="text-decoration-none text-black"
+                    >
+                      +91-9419023459
+                    </a>
+                    <br />
+                    <a
+                      href="tel:+14165089157"
+                      className="text-decoration-none text-black"
+                    >
+                      +1 (416) 508-9157
+                    </a>
+                  </p>
+                  <small className="text-muted d-block mt-3">
+                    Mon-Fri 10am -6pm
+                  </small>
                 </div>
               </div>
             </div>

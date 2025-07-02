@@ -15,25 +15,25 @@ export default function page() {
         <div className={`row justify-content-around`}>
           <div className="col-lg-10">
             <p className="px-5 pt-5 px-md-5 px-lg-5">
-              Discover the exceptional services tailored for landlords that set
-              Bbaraq Homes Inc. apart from the competition! Our mission is
-              clear: to provide unparalleled property management services in the
-              Greater Toronto Area (GTA) that consistently exceed our clients
-              expectations.
+              Discover the exceptional services designed specifically for
+              landlords that set Elite Property Management apart in the heart of
+              Srinagar, Kashmir. Our mission is simple yet powerful: to deliver
+              unmatched property management solutions that consistently exceed
+              the expectations of our clients across the region.
               <br />
               <br />
-              At Bbaraq Homes Inc., we are committed to cultivating transparent
-              and trusting relationships, leveraging our extensive expertise,
-              and optimizing the performance of real estate investments. Our
-              dedication to excellence, innovation, and client satisfaction
-              drives us to establish a new benchmark in property management.
+              At Elite Property Management, we believe in building transparent,
+              trustworthy relationships with every landlord we work with. Backed
+              by deep local knowledge and hands-on experience in Kashmir's
+              dynamic real estate market, we are dedicated to maximizing the
+              value and performance of your property investments.
               <br />
               <br />
-              Through our unwavering commitment to excellence, innovation, and
-              client satisfaction, we aim to set a new standard in property
-              management, empowering our clients to achieve their goals and
-              experience the utmost success in the dynamic real estate
-              landscape.
+              Our commitment to excellence, innovation, and client satisfaction
+              drives everything we do. We're not just managing properties —
+              we're setting a new standard in property management across
+              Srinagar, empowering property owners to thrive in a fast-changing
+              real estate environment.
             </p>
             <div className="row my-5 mx-3">
               {card_info.map((el, idx) => (
