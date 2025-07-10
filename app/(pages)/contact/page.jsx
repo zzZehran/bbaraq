@@ -1,20 +1,25 @@
+"use client";
 import Hero from "@/app/components/Hero";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import styles from "./page.module.css";
-import Image from "next/image";
-import Link from "next/link";
-import { Roboto_Slab } from "next/font/google";
 import ShadowBox from "@/app/components/ShadowBox";
+import { Roboto_Slab } from "next/font/google";
+import { useForm, ValidationError } from "@formspree/react";
+
 const robotoSlab = Roboto_Slab({
   subsets: ["latin"],
   weight: "600",
 });
+
 export default function ContactSection() {
+  const [state, handleSubmit] = useForm("xeokyaol");
+
   const info = {
     address: "Srinagar, Jammu and Kashmir, 190001",
     phone: "",
   };
+
   return (
     <>
       <Navbar />
@@ -27,36 +32,67 @@ export default function ContactSection() {
               <h2 className={`mb-4 ${robotoSlab.className}`}>
                 Send us a message
               </h2>
-              <form>
-                <div className="mb-3">
-                  <input
-                    type="text"
-                    placeholder="Your name.."
-                    className="form-control border-0 border-bottom rounded-0"
-                  />
-                </div>
-                <div className="mb-3">
-                  <input
-                    type="text"
-                    placeholder="Your last name.."
-                    className="form-control border-0 border-bottom rounded-0"
-                  />
-                </div>
-                <div className="mb-3">
-                  <textarea
-                    rows="5"
-                    placeholder="Write something.."
-                    className="form-control border-0 border-bottom rounded-0"
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="btn text-white px-4 py-2 shadow-sm"
-                  style={{ backgroundColor: "#517066", border: "none" }}
-                >
-                  SUBMIT
-                </button>
-              </form>
+
+              {state.succeeded ? (
+                <p>Thanks for your message!</p>
+              ) : (
+                <form onSubmit={handleSubmit}>
+                  <div className="mb-3">
+                    <input
+                      type="text"
+                      name="firstName"
+                      placeholder="Your name.."
+                      className="form-control border-0 border-bottom rounded-0"
+                      required
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <input
+                      type="text"
+                      name="lastName"
+                      placeholder="Your last name.."
+                      className="form-control border-0 border-bottom rounded-0"
+                      required
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Your email.."
+                      className="form-control border-0 border-bottom rounded-0"
+                      required
+                    />
+                    <ValidationError
+                      prefix="Email"
+                      field="email"
+                      errors={state.errors}
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <textarea
+                      name="message"
+                      rows="5"
+                      placeholder="Write something.."
+                      className="form-control border-0 border-bottom rounded-0"
+                      required
+                    />
+                    <ValidationError
+                      prefix="Message"
+                      field="message"
+                      errors={state.errors}
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    className="btn text-white px-4 py-2 shadow-sm"
+                    style={{ backgroundColor: "#517066", border: "none" }}
+                    disabled={state.submitting}
+                  >
+                    SUBMIT
+                  </button>
+                </form>
+              )}
             </div>
 
             {/* Right: Info */}
@@ -78,7 +114,6 @@ export default function ContactSection() {
                 <div>
                   <h6 className="fw-bold">Give us a ring</h6>
                   <p className="mb-0">
-                    {" "}
                     <a
                       href="tel:+917006940036"
                       className="text-decoration-none text-black"

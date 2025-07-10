@@ -5,8 +5,8 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container">
-        <Link className="navbar-brand" href="/">
-          Navbar
+        <Link className="navbar-brand fw-semibold fs-4" href="/">
+          Elite Property Management
         </Link>
         <button
           className="navbar-toggler"

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./hero.module.css";
 export default function Hero({ title, button }) {
   return (
@@ -6,9 +7,11 @@ export default function Hero({ title, button }) {
       <h2 className="my-4">Residential | Commercial</h2>
       <p>Renovations | Re-Modelling | Property Management</p>
       {button && (
-        <button className="px-3 py-2 rounded mt-5 text-white">
-          Contact Us
-        </button>
+        <Link href={"/contact"}>
+          <button className="px-3 py-2 rounded mt-5 text-white">
+            Contact Us
+          </button>
+        </Link>
       )}
     </section>
   );
