@@ -10,7 +10,7 @@ export default function page() {
   return (
     <>
       <Navbar />
-      <Hero title={"Services to Landlord"} button={false} />
+      <Hero title={"Services to Owner/Landlord"} button={false} />
       <ShadowBox>
         <div className={`row justify-content-around`}>
           <div className="col-lg-10">
@@ -35,7 +35,7 @@ export default function page() {
               Srinagar, empowering property owners to thrive in a fast-changing
               real estate environment.
             </p>
-            <div className="row my-5 mx-3">
+            <div className="row my-5 justify-content-center">
               {card_info.map((el, idx) => (
                 <Cards
                   key={idx}
